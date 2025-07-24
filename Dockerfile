@@ -7,6 +7,7 @@ RUN mkdir -p /var/www/html/hls
 
 COPY start.sh /start.sh
 COPY nginx.conf /etc/nginx/sites-enabled/default
+COPY index.html /var/www/html/index.html
 
 RUN chmod +x /start.sh
 
